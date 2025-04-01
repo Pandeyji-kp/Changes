@@ -90,9 +90,6 @@ server.get('*', (request, response) => {
 })
 
 
-
-
-
 server.listen(7000, () => {
     console.log('Server is Working fine !!')
 })

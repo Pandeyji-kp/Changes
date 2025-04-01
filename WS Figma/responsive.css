@@ -1,0 +1,176 @@
+@media only screen and (min-width: 769px) and (max-width:916px){
+    .header{
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .header_right{
+        margin-right: 47px;
+    }
+    /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+    .Career_Opportunities {
+      max-width: 100%;
+    }
+    .Career_Opportunities_left {
+        max-width: 511px;
+        height: 119px;
+        left: 35px;
+    }
+    .digital{
+        width: 100%;
+    }
+    .vector{
+        top: 91px;
+        left: 38px;
+    }
+    .Career_content{
+        margin-top: 20px;
+    } 
+    /* Right Part */
+    .Career_Opportunities_right {
+        margin-left: 61px;
+    }
+}
+@media only screen and (min-width: 604px) and (max-width:768px){
+    .header {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .header_right {
+        width: 299px;
+    }
+     /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+}
+@media only screen and (min-width:548px) and (max-width:603px){
+    .header {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .header_left {
+        width: 180px;
+        height: 85px;
+    }
+    .header_right {
+        width: 299px;
+    }
+     /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+}
+@media only screen and (min-width:484px) and (max-width:547px){
+    .header {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .header_left {
+        width: 159px;
+        height: 85px;
+    }
+    .header_right {
+        width: 285px;
+        margin-left: 44px;
+    }
+    .Chat_with_Us {
+        width: 127px;
+        height: 36px;
+        padding-left: 4px;
+    }
+    .Chat_with_Us p {
+        font-size: 14px;
+        line-height: 36px;    
+    }
+    .Chat_with_Us img {
+        width: 16%;
+    }
+    .Call_Us {
+        width: 61px;
+        height: 16px;
+        margin-left: 11px;
+    }
+    .Call_Us p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+     /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+}
+@media only screen and (min-width:480px) and (max-width:483px){
+    .header {
+        margin-left: 137px;
+        margin-top: 7px;
+        flex-wrap: wrap;
+    }
+    .header_left {
+        max-width: 196px;
+        height: 85px;
+    }
+    .header_right {
+        margin-left: -20px;
+    }
+    .Chat_with_Us {
+        max-width: 127px;
+        height: 36px;
+        padding-left: 4px;
+    }
+    .Chat_with_Us p {
+        font-size: 14px;
+        line-height: 36px;    
+    }
+    .Chat_with_Us img {
+        width: 16%;
+    }
+    .Call_Us {
+        max-width: 61px;
+        height: 16px;
+        margin-left: 11px;
+    }
+    .Call_Us p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+     /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+}
+@media only screen and (max-width:479px){
+    .header {
+        margin-left: 137px;
+        margin-top: 7px;
+        display: block;
+    }
+    .header_left {
+        max-width: 196px;
+        height: 85px;
+    }
+    .header_right {
+        margin-left: -20px;
+    }
+    .Chat_with_Us {
+        max-width: 127px;
+        height: 36px;
+        padding-left: 4px;
+    }
+    .Chat_with_Us p {
+        font-size: 14px;
+        line-height: 36px;    
+    }
+    .Chat_with_Us img {
+        width: 16%;
+    }
+    .Call_Us {
+        max-width: 61px;
+        height: 16px;
+        margin-left: 11px;
+    }
+    .Call_Us p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+     /* ------------------------------
+         Career Opportunities Start 
+    ---------------------------------*/
+}
