@@ -1,0 +1,5 @@
+kp74128717
+Ac7WRmtpifjXmSBP
+
+
+mongodb+srv://kp74128717:<db_password>@cluster0.dlvla.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

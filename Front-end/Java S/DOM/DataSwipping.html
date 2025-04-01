@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .content {
+            flex-basis: 40%;
+            margin: 2.5%;
+            padding: 15px;
+            border: 1px solid red;
+            border-radius: 15px;
+
+        }
+
+        button {
+            padding: 15px;
+            border: 0px;
+            background-color: black;
+            border-radius: 15px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="content" id="content1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium quis tempora esse aspernatur
+            ad, aut, error quos fuga quas minus voluptas. Sint excepturi reiciendis ducimus cumque enim cum veritatis!
+        </div>
+        <div class="content" id="content2">
+            Sint excepturi reiciendis ducimus cumque enim cum veritatis!
+        </div>
+        <button onclick="Swipedata()">Swipe data</button>
+    </div>
+    <script>
+
+        function Swipedata() {
+            let a = document.getElementById('content1').innerText;
+            let b = document.getElementById('content2').innerText;
+            let c = b;
+
+            document.getElementById('content2').innerText = a;
+            document.getElementById('content1').innerText = c;
+        }
+
+
+    </script>
+</body>
+
+</html>

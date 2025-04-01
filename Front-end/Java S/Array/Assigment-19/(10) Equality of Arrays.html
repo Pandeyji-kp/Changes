@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality of Arrays</title>
+</head>
+
+<body>
+    <script>
+        const array1 = [1, 2, 3, 4];
+        const array2 = [1, 2, 3, 4];
+
+        let areEqual = true;
+
+        // Check if lengths are equal
+        if (array1.length !== array2.length) {
+            areEqual = false;
+        } else {
+            // Compare each element
+            for (let i = 0; i < array1.length; i++) {
+                if (array1[i] !== array2[i]) {
+                    areEqual = false;
+                    break;
+                }
+            }
+        }
+
+       document.write(areEqual); // Output: true
+    </script>
+
+</body>
+
+</html>

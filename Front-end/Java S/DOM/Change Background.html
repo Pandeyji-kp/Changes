@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            background-color: cyan;
+        }
+        main {
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main id="main" onclick="Colorchange()"></main>
+    
+</body>
+<script>
+    let main = document.getElementById('main');
+
+    function Colorchange(){
+        var style = getComputedStyle(main);
+        var color = style.backgroundColor;
+
+        if(color == 'rgb(255, 255, 255)') {
+            main.style.backgroundColor = 'black';
+       } else {
+            main.style.backgroundColor = 'white';
+       }
+    }
+</script>
+</html>

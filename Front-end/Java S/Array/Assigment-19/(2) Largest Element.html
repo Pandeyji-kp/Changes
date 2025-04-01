@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Largest Elemnt
+    </title>
+</head>
+<body>
+    <script>
+        let numbers=[14,25,8,19,32];
+        let largest=numbers[0];
+
+        for(let v in numbers){
+            if(numbers[v]>largest){
+                largest=numbers[v];
+            }
+        }
+
+        document.write(largest)
+    </script>
+    
+</body>
+</html>

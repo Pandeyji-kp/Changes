@@ -1,0 +1,226 @@
+*{
+  box-direction: none;
+}
+.imgdiv>img{
+  width: 100%;
+  height: 65vh;
+  
+}
+.container{
+  position: absolute;
+  top: 2%;
+}
+.container>ul{
+  display: flex;
+  
+}
+.container>ul>li{
+  list-style: none;
+  color: white;
+  padding: inherit;
+  justify-content: space-around;
+  font-size: 24px;
+  
+}
+.zomato{
+  font-size: 400%;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  color: white;
+}
+.text{
+  font-size: 200%;
+  position: absolute;
+  top: 42%;
+  left: 29%;
+  color: white;
+  
+}
+
+.secimg{
+
+}
+.secimg{
+  margin-left: 3%;
+}
+.secimg>img{
+  border-radius: 25px;
+}
+.collection{
+  font-size: 200%;
+  font-weight: bold;
+  margin-left: 2%; 
+}
+.explore{
+  margin-left: 2%;
+  margin-bottom: 1%;
+  font-size: large;
+}
+.secimg_3{
+  margin-left: 2%; 
+}
+.location{
+  font-size: 200%;
+  text-align: center;
+  margin-top: 4%;
+}
+.places1{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  
+}
+.places2{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  
+}
+.spot{
+  padding: 5%;
+  box-shadow: 0px 0px 3px 0.5px  gray;
+}
+.social{
+  font-size: 200%;
+  text-align: center;
+  margin-top: 4%;
+}
+.message{
+  
+  text-align: center;
+  margin-top: 1%;
+}
+.form{
+  width: 50%;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+}
+button{
+  color: white;
+  background-color: red;
+}
+
+label{
+  margin-right: 5%;
+  
+}
+.iconimges{
+  width: 15%;
+  height: 5%;
+  padding: 10px;
+  left: 5%;
+  position: relative;
+  left: 36%;
+}
+
+.main{
+  width: 100%;
+  margin: auto;
+}
+.jodhpur{
+  margin: auto;
+  font-size: 200%;
+  
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  color: white;
+}
+.jtbh{
+  margin: auto;
+  font-size: 200%;
+  
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  
+}
+
+.tea{
+  margin: auto;
+  position: absolute;
+  top: 19%;
+  left: 4%;
+}
+
+.basani{
+  margin: auto;
+  position: absolute;
+  top: 22%;
+  left: 4%;
+}
+.panding{
+  margin: auto;
+  position: absolute;
+  top: 26%;
+  left: 3%;
+  border:0.5px solid red;
+  border-radius: 30px;
+  padding:0px 10px 0px 10px;
+}
+.tab{
+  margin: auto;
+  position: absolute;
+  top: 32%;
+  left: 3%;
+}
+
+.food{
+  position: relative;
+ 
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+
+.images1{
+  
+  width: 500%;
+  height: 106%;
+}
+
+.images2{
+  position: absolute;
+    left: 200%;
+    width: 200%;
+    height: 106%;
+}
+
+.tab1{
+  position: absolute;
+  top: 100%;
+  left: 3%;
+}
+.footer{
+  position: sticky;
+  bottom: auto;
+}
+
+.foottext{
+  display: flex;
+}
+
+.first{
+  width: 90%;
+  
+  height: 500px;
+  
+  background-color: #f8f8f8;
+}
+
+.footercomn{
+  width: 90%;
+  position: absolute;
+  top: 190%;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+

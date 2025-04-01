@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            width: 100vw;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            animation: slide 10s linear infinite;
+            width: calc((400px + 20px) * 10 * 2); /* Ensures full width */
+        }
+
+        .slide {
+            width: 400px;
+            height: 400px;
+            background: tomato;
+            text-align: center;
+            line-height: 400px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        /* Keyframe Animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <!-- First Set of Boxes -->
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+            <div class="slide">5</div>
+            <div class="slide">6</div>
+            <div class="slide">7</div>
+            <div class="slide">8</div>
+            <div class="slide">9</div>
+            <div class="slide">10</div>
+
+            <!-- Duplicate Set for Seamless Transition -->
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+            <div class="slide">5</div>
+            <div class="slide">6</div>
+            <div class="slide">7</div>
+            <div class="slide">8</div>
+            <div class="slide">9</div>
+            <div class="slide">10</div>
+        </div>
+    </div>
+
+</body>
+</html>

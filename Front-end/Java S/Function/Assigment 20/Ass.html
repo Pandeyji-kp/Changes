@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lowest Value
+    </title>
+</head>
+
+<body>
+    <button onclick="largest()">Largest Value</button>
+    <button onclick="smallest()">smallest Value</button>
+    <button onclick="reverse()">reverse Value</button>
+    <button onclick="nonRepeated()">nonRepeated Value</button>
+    <button onclick="Vowelname()">Vowelname Value</button>
+    <button onclick="letterCapitalize()">Capitalize Value</button>
+
+
+
+
+
+    <script>
+        function largest() {
+
+            let numbers = [5, 15, 3, 20, 4, 45, 12];
+            let largest = numbers[0];
+
+            for (let v in numbers) {
+                if (numbers[v] > largest) {
+                    largest = numbers[v];
+                }
+            }
+
+            console.log(largest);
+
+
+
+        }
+
+        function smallest() {
+            let numbers = [5, 15, 3, 20, 4, 45, 12];
+            let smallest = numbers[0];
+
+            for (let v in numbers) {
+                if (numbers[v] < smallest) {
+                    smallest = numbers[v];
+                }
+            }
+
+            console.log(smallest);
+        }
+
+        function reverse() {
+            let numbers = [25, 99, 77, 66, 44, 88, 99, 66, 77, 66, 55];
+            let newArray = numbers.reverse();
+
+
+            console.log(newArray);
+        }
+
+
+        function nonRepeated() {
+            let str = "Hello World";
+
+            let characterCount = {};
+
+
+            for (let dataa of str) {
+                dataa = dataa.trim().toLowerCase();
+                if (dataa != '') {
+                    characterCount[dataa] = (characterCount[dataa] || 0) + 1;
+                    // console.log(characterCount);
+                }
+            }
+
+            for (let data of str) {
+                data = data.trim().toLowerCase();
+                if (characterCount[data] == 1) {
+                    console.log(data);
+                    break;
+                }
+            }
+        }
+
+
+
+        function Vowelname() {
+            let indianNames = ["Arjun", "Vinita", "Ravi", "Nisha", "Ishan", "Priya", "Veer", "Siddharth", "Anika", "Karan", "Ayesha", "Rahul", "Uma", "Vikram", "Neha", "Deepak", "Kavita", "Aditya", "Divya", "Rohan"];
+            let Vowelcharater = ['a', 'e', 'i', 'o', 'u'];
+            let newarray = [];
+
+            for (let name of indianNames) {
+                if (Vowelcharater.includes(name[0].toLowerCase()) && (name.length === 5 || name.length === 6)) {
+                    newarray.push(name);
+                }
+            }
+
+            console.log(newarray);
+        }
+
+        Vowelname();
+
+        function letterCapitalize() {
+            let indianNames = ["arjun", "vinita", "ravi", "nisha", "ishan", "priya", "veer", "siddharth", "anika", "karan", "ayesha", "rahul"];
+
+            let newArray = indianNames.map((Value) => {
+
+                return Value[0].toUpperCase() + Value.slice(1);
+            })
+
+            console.log(newArray);
+        }
+    </script>
+
+</body>
+
+</html>

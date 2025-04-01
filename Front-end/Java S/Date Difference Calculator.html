@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Difference Calculator</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: grey;
+        }
+
+        .main{
+            width: 300px;
+            padding: 20px;
+            margin: 100px auto;
+            background-color: aliceblue;
+        }
+
+        .main label{
+            display: block;
+            margin-top: 10px;
+        }
+
+        .main input{
+            width: 100%;
+            height: 30px;
+        }
+
+        .main button{
+            background-color: brown;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            margin-top: 15px;
+            border: none;
+        }
+
+        .output{
+            width: 80%;
+            border: 1px solid firebrick;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Date Difference Calculator</h3>
+
+        <div>
+            <label for="">From Date</label>
+            <input type="datetime-local" id="fromdate">
+        </div>
+        <div>
+            <label for="">To Date</label>
+            <input type="datetime-local" id="todate">
+        </div>
+        <button>Get Difference</button>
+        <div class="output" id="output">
+            
+        </div>
+    </div>
+
+    <script>
+        let btn=document.querySelector('button');
+        let fromdate=document.querySelector("#fromdate");
+        let todate=document.querySelector("#todate");
+        let outputdiv=document.querySelector('#output');
+
+
+
+        btn=addEventListener('click',function(){
+            let fromdateobj=new Date(fromdate.value);
+            let todateobj=new Date(todate.value);
+            let fromdateobjmili=fromdateobj.getTime();
+            let todateobjmili=todateobj.getTime();
+
+            let difmilsec=(todateobjmili-fromdateobjmili)/1000;
+            
+
+            let onemin=60;
+            let onehour=onemin*60;
+            let onedaysec=onehour*24;
+
+            let finaldays=Math.floor( difmilsec/onedaysec);
+            let remsec=difmilsec % onedaysec
+            let finalhours=Math.floor(remsec/onehour);
+
+            let output = `Days: ${finaldays}, Hours: ${finalhours}`;
+            outputdiv.innerText = output;
+
+
+        })
+    </script>
+    
+</body>
+</html>

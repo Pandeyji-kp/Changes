@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Difference of Arrays
+    </title>
+</head>
+
+<body>
+    <script>
+        let array1 = [1, 2, 3, 4];
+        let array2 = [3, 4, 5, 6];
+
+        let difference = [];
+
+        // Elements in array1 but not in array2
+        for (let i = 0; i < array1.length; i++) {
+            let found = false;
+            for (let j = 0; j < array2.length; j++) {
+                if (array1[i] === array2[j]) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                difference.push(array1[i]);
+            }
+        }
+
+        // Elements in array2 but not in array1
+        for (let i = 0; i < array2.length; i++) {
+            let found = false;
+            for (let j = 0; j < array1.length; j++) {
+                if (array2[i] === array1[j]) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                difference.push(array2[i]);
+            }
+        }
+
+        document.write(difference); // Output: [1, 2, 5, 6]
+    </script>
+
+</body>
+
+</html>

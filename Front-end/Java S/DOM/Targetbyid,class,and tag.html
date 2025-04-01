@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div class="row" id="row">
+        1.<b>Lorem ipsum </b> dolor sit amet consectetur adipisicing elit. Tempora voluptatum facere quis voluptatibus esse, odit reprehenderit iure adipisci rem nostrum in excepturi quia maxime, asperiores dolores! Ipsa delectus deserunt repellat?
+    </div>
+    <div class="row" id="row">
+       2. dolor sit amet consectetur adipisicing elit. Tempora voluptatum facere quis voluptatibus esse, odit reprehenderit iure adipisci rem nostrum in excepturi quia maxime, asperiores dolores! Ipsa delectus deserunt repellat?
+    </div>
+    <div class="row" id="row">
+        3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum facere quis voluptatibus esse, odit reprehenderit iure adipisci rem nostrum in excepturi quia maxime, asperiores dolores! Ipsa delectus deserunt repellat?
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+       
+        document.getElementById('row').innerText
+
+         //
+         // Using ID//
+        // console.log( document.getElementById('row').innerText)
+        // console.log( document.getElementById('row').innerHTML)
+
+        //Using Id for insert data
+        //  let a = document.getElementById('row').innerText;
+        //  let b =  document.getElementById('row').innerHTML;
+
+        //  document.getElementById('output').innerText = a;
+        //  document.getElementById('output').innerText = b;
+
+        // Using Class Name
+        // let a = document.getElementsByClassName('row');
+        // let b = a[1].innerHTML;
+        // document.getElementById('output').innerHTML = a;
+        // console.log(a[1]);
+
+
+        // Using Class Name
+        var a = document.getElementsByTagName('div');
+        var a = a[2].innerHTML;
+        document.getElementById('output').innerHTML = a;
+        console.log(a);
+    </script>
+    
+</body>
+</html>

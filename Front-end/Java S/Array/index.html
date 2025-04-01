@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     let Data=["rahul","rahul@gamil.com",15654985266];
+
+    //  console.log(Data);  
+
+    //  Data[3] = "Web";
+
+    //  console.log(Data)
+
+    //  Data[3] = "Website";
+
+    //  console.log(Data)
+
+    //  Data[7] = "Web";
+
+    //  console.log(Data)
+
+    Data.push('website','html','html5');
+    // console.log(Data.push('website','html','html5'));
+
+    Data.pop();
+    // console.log(Data);
+
+
+    // for(let i=0;  i<Data.length; i++){
+    //   document.write(Data[i]+"<br>");
+    // }
+
+    // for (let value of Data){
+    //     console.log(value);
+    //     document.write(value+'<br>');
+    // }
+
+    for (let index in Data){
+        console.log(index);
+        document.write(Data[index]+'<br>');
+    }
+</script>
+</html>

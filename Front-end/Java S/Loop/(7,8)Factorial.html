@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     let from = parseInt(prompt('Enter the starting value:'));
+        let to = parseInt(prompt('Enter the ending value:'));
+
+        for (let i = from; i <= to; i++) {
+            let factorial = 1;
+            for (let j = 1; j <= i; j++) {
+                factorial *= j;
+            }
+            document.write("Factorial of " + i + " is: " + factorial + "<br>");
+        }
+
+   
+
+
+</script>
+</html>
